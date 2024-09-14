@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+    <link rel="stylesheet" href="../Style/indexStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="indexHead"><span id="loginTomatoLogo"><img src="../images/loginTomatoLogo.png"></span><h1>Tomato </h1></div>
+    <div class="form-container">
+        <div id="adminUser">
+            <div id="choice">
+                <button class="admin selected">Admin</button>
+                <button class="user">User</button>
+            </div>
+        </div>
+        <div class="admin-login">
+            
+            <div class="input-groups adminIdGroup">
+                <span ><i class="fa-solid fa-user icon"></i></span>
+                <input type="text" id="adminId" placeholder="Enter Your Admin Id">
+                <span class="hideError errorBlock" id="errorShow" >Error</span>
+            </div>
+            <div class="input-groups" id="password-groups">
+                <span ><i class="fa-solid fa-lock icon"></i></span>
+                <input type="password" id="adminPassword" placeholder="Enter Your Admin Password" > 
+                <i class="fa-solid fa-eye-slash eye"></i>
+                <span class="hideError errorBlock">Error</span>
+            </div>
+            <div class="input-groups">
+                <button class="adminLoginBtn">Login</button>
+            </div>
+            
+        </div>
+        <div class="user-login move">
+            <div class="input-groups adminIdGroup">
+                <span ><i class="fa-solid fa-user icon"></i></span>
+                <input type="text" id="userEmail" placeholder="Enter Your User Email">
+                <span class="errorBlock hideError">Error</span>
+            </div>
+            <div class="input-groups" id="password-groups">
+                <span ><i class="fa-solid fa-lock icon"></i></span>
+                <input type="password" id="userPassword"  placeholder="Enter Your User Password" > 
+                <i class="fa-solid fa-eye-slash eye"></i>
+                <span class="errorBlock hideError ">Error</span>
+            </div>
+            <div class="input-groups">
+                <button class="userLoginBtn">Login</button>
+
+            </div>
+               <div class="newUser">
+                <span><p>New To Tomato</p></span>
+                <button class="registerBtn">Register</button>
+               </div>
+            
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="../Script/indexScript.js"></script>
+
+</body>
+</html>

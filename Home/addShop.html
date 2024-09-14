@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addShopDetails</title>
+    <link rel="stylesheet" href="../Style/loadHeadAdmin.css">
+    <link rel="stylesheet" href="../Style/addShop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <form action="#" id="addShopForm">
+        <div class="shop-details">
+            <h2 id="titleShop">Shop Details</h2>
+            <div class="input-groups">
+           <label for="shopName">Enter the Shop Name</label>
+           <input type="text" id="shopName">
+           <div class="hidden">dssdgdsg</div>
+           </div>
+        <div class="input-groups">
+           <label for="shopLocation">Enter the Shop Location</label>
+           <input type="text" id="shopLocation">
+           <div class="hidden">dssdgdsg</div>
+        </div>
+           <div class="input-groups">
+           <label for="openTimings">Enter the Shop Opening Timings</label>
+           <input type="time" id="openTimings">   
+           <select name="" id="amPmOpen">
+            <option value="am">AM</option>
+            <option value="pm">PM</option>
+           </select>
+           <div class="hidden">dssdgdsg</div></div>
+           <div class="input-groups">
+           <label for="closeTimings">Enter the Shop Closing Timings</label>
+           <input type="time" id="closeTimings">   
+           <select name="" id="amPmClose">
+            <option value="am">AM</option>
+            <option value="pm">PM</option>
+           </select>
+           <div class="hidden">dssdgdsg</div></div>
+           
+           <div class="input-groups">
+           <label for="shopPhotos">Enter the Shop Photos</label>
+           <input type="file" id="shopPhotos">  <div class="hidden">dssdgdsg</div></div> 
+           <div class="input-groups">
+           <label for="shopCuisine">Enter the Shop Cuisine</label> 
+           <select name="cuisineSelect" id="cuisineSelect">
+            <option value="">choice</option>
+            <option value="SouthIndian">SouthIndian</option>
+            <option value="NorthIndian">NorthIndian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Italian">Italian</option>
+           </select>
+           <div class="hidden">dssdgdsg</div>
+        </div>
+        </div>
+        <div class="breakFasts">
+            <div class="addDiv">
+                <h2 id="titleBreakfast">Add Breakfast Items</h2>
+            <button id="addMoreBreakfast">Add item</button></div>
+            <div class="breakfast">
+                 <h3 id="itemTitle">Item-1</h3>
+                <div class="input-groups">
+                <label for="foodName">Enter The Food Item</label>
+                <input type="text" id="foodName">
+                <div class="hidden">dssdgdsg</div>
+            </div>
+            <div class="input-groups">
+                <label for="foodImage">Enter The Food Image</label>
+                <input type="file" id="foodImage">
+                <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodQuantity">Enter The Food Quantity</label>
+                <input type="text" id="foodQuantity">
+                <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodPrice">Enter The Food Price</label>
+                <input type="text" id="foodPrice">
+                <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodCategory"> Food Category</label>
+
+                    <select name="" id="foodCategory">
+                        <option selected>Choose</option>
+                        <option value="veg">Veg</option>
+                        <option value="Non-veg">NonVeg</option>
+                       </select>
+                       <div class="hidden">dssdgdsg</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="lunches">
+            <div class="addDiv">
+                <h2 id="titleBreakfast">Add lunch Items</h2>
+            <button id="addMoreLunch">Add item</button></div>
+            <div class="lunch">
+                <h3 id="itemTitle">Item-1</h3>
+                <div class="input-groups">
+                <label for="foodName">Enter The Food Item</label>
+                <input type="text" id="foodName">
+                <div class="hidden">dssdgdsg</div>
+            </div>
+            <div class="input-groups">
+                <label for="foodImage">Enter The Food Image</label>
+                <input type="file" id="foodImage">  <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodQuantity">Enter The Food Quantity</label>
+                <input type="text" id="foodQuantity">  <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodPrice">Enter The Food Price</label>
+                <input type="text" id="foodPrice">  <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                    <label for="foodCategory"> Food Category</label>
+    
+                        <select name="" id="foodCategory">
+                            <option selected>Choose</option>
+                            <option value="veg">Veg</option>
+                            <option value="Non-veg">NonVeg</option>
+                           </select>
+                           <div class="hidden">dssdgdsg</div>
+                    </div>
+            </div>
+        </div>
+        <div class="dinners">
+            <div class="addDiv">
+                <h2 id="titleBreakfast">Add Dinner Items</h2>
+            <button id="addMoreDinner">Add item</button></div>
+            <div class="dinner">
+                <h3 id="itemTitle">Item-1</h3>
+                <div class="input-groups">
+                <label for="foodName">Enter The Food Item</label>
+                <input type="text" id="foodName">
+                <div class="hidden">dssdgdsg</div>
+            </div>
+            <div class="input-groups">
+                <label for="foodImage">Enter The Food Image</label>
+                <input type="file" id="foodImage">
+                <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodQuantity">Enter The Food Quantity</label>
+                <input type="text" id="foodQuantity">
+                <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                <label for="foodPrice">Enter The Food Price</label>
+                <input type="text" id="foodPrice">
+                <div class="hidden">dssdgdsg</div></div>
+                <div class="input-groups">
+                    <label for="foodCategory"> Food Category</label>
+    
+                        <select name="" id="foodCategory">
+                            <option selected>Choose</option>
+                            <option value="veg">Veg</option>
+                            <option value="Non-veg">NonVeg</option>
+                           </select>
+                           <div class="hidden">dssdgdsg</div>
+                    </div>
+            </div>
+        </div>
+        <div id="submitDiv">
+        <button type="submit" id="finalSubmit">Submit</button></div>
+    </form>
+    </div>
+
+    <script src="../Script/jQuery.js"></script>
+    <script src="../Script/loadHeadAdmin.js"></script>
+    <script src="../Script/addShopScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+</body>
+</html>

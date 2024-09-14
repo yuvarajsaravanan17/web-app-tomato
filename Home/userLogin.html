@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="../Style/userLogin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div id="form-head"><p>Register To Tomato</p></div>
+        <form action="" id="form-data">
+        <div class="input-groups">
+            <div class="input-group">
+                <i class="fa-solid fa-user icon"></i>
+             <input type="text" placeholder="Enter Your Name" id="userName" class="inputMove userNameMove">      <div class="hiddenLogin moveError">ERROR</div> </div>
+         
+             <div class="input-group">
+             <i class="fa-solid fa-envelope icon"></i>
+             <input type="text" placeholder="Enter Your Email" id="userEmail"  class="inputMove">
+             <div class="hiddenLogin moveError">ERROR</div>
+             <div class="input-group">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="password" placeholder="Enter Your Password" id="userPassword"  class="inputMove moreMove">
+                <div class="hiddenLogin moveError">ERROR</div>
+            </div><div class="input-group">
+                <i class="fa-solid fa-phone icon"></i>
+             <input type="text" placeholder="Enter Your Phone" id="userPhone"  class="inputMove">     <div class="hiddenLogin moveError">ERROR</div> </div>
+             <div class="input-group">
+                <i class="fa-solid fa-city icon"></i>
+             <input type="text" placeholder="Enter Your City" id="userLocation">     <div class="hiddenLogin moveError">ERROR</div> </div>
+             <div class="input-group"> <i class="fa-solid fa-list icon"></i><select name="" id="select-type">
+              
+                <option value="veg">Veg</option>
+                <option value="non-veg">Non-veg</option>
+             </select>
+            </div>
+             <button id="registerBtn">Register</button>
+
+
+        </div>
+    </form>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="../Script/loginSript.js"></script>
+</body>
+</html>
