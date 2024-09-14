@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+.nav-header{
+    display: flex;
+    color:black; 
+    justify-content: space-between;
+    background-color: rgba(239, 237, 237,0.4);
+}
+.first-part{
+    width:40%;
+    padding:10px;
+    font-size:24px;
+}
+.last-part{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color:black;
+    padding:20px;
+    width:50%;
+    
+}
+#name{
+    margin-top: 5px;;
+    color:rgb(14, 212, 14);
+    background-color: whitesmoke;
+    padding:10px;
+    border-radius: 5px;;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+
+}
+#userName{
+     
+    position:absolute;
+    left:85%;
+     
+}
+a{
+    color:rgba(10, 10, 10,0.7);
+    text-decoration: none;
+    
+    font-size:18px;
+    
+}
+a:hover{
+   color:black;
+}
+.header{
+    position:sticky;
+    z-index: 1000;
+    top:0;
+    background-color: rgba(250, 244, 244, 1);
+    border: 2px solid  rgba(145, 143, 143,0.6) ;
+}
+#homeLink{
+    
+    position: relative;
+    cursor:pointer;
+}
+#tomatoName{
+    margin-left:40px;
+}
+#tomato{
+    position:absolute;
+    margin-right:3px;
+    left:1%;
+    transform: scale(1.3);
+    
+}
+.sideBar{
+    position: relative;
+    list-style-type: none;
+    
+}
+.sideBarContent{
+    padding:20px;
+    width:250px;
+    background-color: grey;
+    border: 5px solid black;
+    position:absolute;
+
+}
+.sideContent{
+    
+    padding-bottom:35px;
+    font-size:1.5rem;
+
+}
+
+.moveLeft{
+    transform: translateX(-110%);
+    transition: 1.5s;
+}
+#sideMenuImage{
+    cursor: pointer;
+}
+.closeIcon{
+    color:red;
+    transform: scale(1.7);
+    margin-left: 90%;
+    cursor: pointer;
+    
+}
+.sideBarHead{
+    display: flex;
+    position: relative;
+    
+}
+.sideBarNav{
+    margin-left: 10%;
+}
+.sideContent a{
+    
+    padding:5px 52px;
+   
+    
+
+}
+.sideBarHead{
+    display: none;
+}
+#tomatoName{
+    font-size:1.6rem;
+    padding:10px 30px;
+    padding-left:0px;
+}
+#tomatoSideImg{
+    margin-left:30px;
+    transform: scale(1.4);
+}
+.icon{
+    margin-right:1px;
+}
+@media screen and (max-width: 500px) {
+    .sideBarHead{
+        display: block;
+    }
+    .nav-header{
+        display: none;
+    }
+       
+    #userName{
+     
+        position:absolute;
+       
+        left:85%; top:70%;
+         
+    }
+}

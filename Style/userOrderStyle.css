@@ -1,0 +1,74 @@
+#orderOuterBox{
+    margin-top:20px;   
+}
+
+.orderInnerBox{
+    padding:10px 40px;
+    display: flex;
+    gap:50px;
+    flex-wrap: wrap;
+    
+}
+.orderHeadDiv{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(255, 249, 249, 0.9);
+    padding:10px;
+    gap:50px;
+    color:rgba(13, 12, 12,0.7);
+    justify-content: space-around;
+    cursor:pointer;
+    border:1px solid black;
+    font-weight: 500;
+}
+.orderHeadDiv:hover{
+
+    color:black;
+}
+.orderId{
+    margin-left:1%;
+}
+.orderItemBox
+{   padding:30px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width:340px;
+    height: 400px;
+    cursor:pointer;
+    border-radius: 10px;;
+
+}
+.orderItemBox:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+
+
+.itemImage img{
+    width:260px;
+    height: 270px;
+    border-radius: 10px;;
+}
+.itemImage{
+    padding:10px;
+}
+
+.shopName{
+    font-weight: bold;
+    font-size:1.1rem;
+    margin-left:10px;
+    color:rgba(11, 8, 8,0.7);
+    
+}
+.foodName,.foodPrice,.foodQuantity{
+    color:rgba(11, 8, 8,0.6);
+    padding:10px;
+}
+
+.icon{
+    color:rgba(11, 8, 8,0.7);
+}
+
+
+
